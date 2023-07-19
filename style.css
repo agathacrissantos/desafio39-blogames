@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2? family= Actor & family= Caesar+Dressing & family= Inter:wght@200;300;400 & family= Lato:ital,wght@ 0,300;0,400;1,300 & family= Lily+Script+One & family= Monomaniac+One & family= Montserrat:ital,wght@0,300;0,400;1,400 & family= Roboto:ital,wght@0,300;1,300 & display=swap' );
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Caesar+Dressing&family=Inter:wght@200;300;400&family=Lato:ital,wght@0,300;0,400;1,300&family=Lily+Script+One&family=Monomaniac+One&family=Montserrat:ital,wght@0,300;0,400;1,400&family=Roboto:ital,wght@0,300;1,300&display=swap');
 
 *{
     padding: 0;
@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 14px;
+    height: 12vh;
 }
 
 header nav {
@@ -21,15 +21,35 @@ header nav {
     height: 5vh;
     width: 10vw;
 }
-
 header h1 {
-    font-family: "Caesar Dressing"; sans-serif;
+    font-family: 'Caesar Dressing', sans-serif;
+
 }
 
-ul {
-    border: solid red;
+main ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
+main li {
+    list-style: none;
+}
+
+
+
+@media screen and (max-widht: 480px){
+header {
+    border:solid;
+}
+.iconeHeader {
+    display: none;
+}
+.usuarioIcon {
+    display: flex;
+  }
+  .segundoUsuarioIcon {
+    display: none;
+  }
+
+}
