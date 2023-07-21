@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Actor&family=Caesar+Dressing&family=Inter:wght@200;300;400&family=Lato:ital,wght@0,300;0,400;1,300&family=Lily+Script+One&family=Monomaniac+One&family=Montserrat:ital,wght@0,300;0,400;1,400&family=Roboto:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Actor & family= Caesar+Dressing & family= Inter:wght@200;300;400 & family= Lato:ital,wght@0,300;0,400;1,300 & family= Lily+Script+One & family= Monomaniac+One & family = Montserrat:ital,wght@0,3 00;0,400;1,400 & family= Nunito+Sans:wght@200;300;400 & family= Roboto:ital,wght@0,300;1,300 & display=swap');
 
 * {
     padding: 0;
@@ -31,12 +32,21 @@ header h1 {
     font-family: 'Caesar Dressing', sans-serif;
 }
 
+main {}
+
 main nav ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    width: 60vw;
+    height: 3vw;
+    width: 40vw;
+    font-family: "nunito", sans-serif;
+}
+
+main nav {
+    display: flex;
+    justify-content: center;
 }
 
 main div {
@@ -59,7 +69,48 @@ main div {
     background-image: url(assets/multiversus.png);
 }
 
-@media screen and (max-widht: 480px) {
+main section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.segundaSessaoMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(assets/needforspeed.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 70vh;
+    color: #F9F9F9;
+}
+
+.terceiraSessaoMain {
+    display: flex;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    border-top: 2px solid #E2E2E2;
+}
+
+.primeiraSessaoFooter {
+    display: flex;
+}
+
+.segundaSessaoFooter li {
+    list-style: none;
+}
+
+.segundaSessaoFooter nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-widht: 500px) {
     header {
         border: solid;
     }
@@ -76,4 +127,13 @@ main div {
         display: none;
     }
 
+    main nav ul {
+        display: none;
+    }
+
+    main section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
